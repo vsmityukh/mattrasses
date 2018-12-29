@@ -9,6 +9,9 @@
 	background-color: $accent
 	color: #fff
 
+a:focus,a:active
+	text-decoration: none
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -196,6 +199,77 @@ section.warranty
 		text-align: center
 		line-height: normal
 
+
+//gallery
+.gallery_item
+	margin-bottom: 20px
+	padding: 0 10px
+	border-radius: 3px
+	height: 264px
+	max-width: 284px
+	margin-left: auto
+	margin-right: auto
+	img
+		max-width: 100%
+.gallery_item--social
+	padding: 14px
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
+	border-radius: 5px
+	height: 100%
+	width: 100%
+
+	.g_social--inner
+		background: #FFFFFF url('../img/gallery-first-bg.jpg') no-repeat
+		height: 100%
+		width: 100%
+		background-size: contain
+		padding: 27px 0 22px
+		text-align: center
+		img
+			display: block
+			margin: 0 auto 0
+		p
+			max-width: 173px
+			margin: 16px auto 6px
+			font-size: 22px
+			line-height: normal
+		a
+			display: block
+			margin: 18px auto 0
+			max-width: 173px
+			height: 37px
+			text-align: center
+			line-height: 37px
+			&:hover
+				text-decoration: none
+				color: $h-text
+				background: #fff
+
+// reviews slider
+.rev_slider--item
+	background: #FFFFFF
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
+	border-radius: 5px
+	padding: 46px 45px 50px 50px
+	margin: 0 10px
+
+	.slide_head
+		img
+			float: left
+			margin-right: 30px
+		.slide_head--name
+			padding-top: 6px
+			p
+				font-size: 17px
+				font-weight: bold
+				line-height: normal
+				margin: 0 0 6px
+			span
+				display: block
+	.slide_text
+		margin-top: 28px
+		font-size: 14px
+		line-height: 18px
 
 footer
 	min-height: 118px
