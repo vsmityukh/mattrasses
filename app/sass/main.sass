@@ -11,6 +11,8 @@
 
 a:focus,a:active
 	text-decoration: none
+button:focus, button:active
+	outline: none
 
 body
 	font-size: 16px
@@ -52,6 +54,13 @@ b, strong
 	font-size: 16px
 	color: #FFFFFF
 
+h2
+	text-align: center
+	font-weight: bold
+	font-size: 36px
+	color: $text
+	margin-bottom: 57px
+
 section
 	padding: 47px 0
 	background-color: #fff
@@ -61,6 +70,7 @@ section
 		font-size: 36px
 		color: $text
 		margin-bottom: 57px
+		line-height: 1
 		&.small_text
 			margin-bottom: 44px
 			small
@@ -78,6 +88,9 @@ section
 				font-size: 18px
 				display: block
 				text-align: center
+	&.form_section
+		.title_row
+			margin-bottom: 42px
 
 
 
@@ -155,29 +168,29 @@ header
 		line-height: 1
 		color: $text
 		margin-bottom: 41px
-	form
-		max-width: 1012px
-		width: 80%
-		margin: auto
-		display: flex
-		justify-content: space-between
-		input
-			width: 35%
-			max-width: 347px 
-			margin-right: 20px
-			box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
-			border: none
-			height: 56px
-			background: #fff
-			padding: 0 33px
-			line-height: 16px
-			font-size: 16px
-			color: #516275
-		button
-			border: none
-			height: 56px
-			max-width: 270px
-			width: 28%
+form.form-inline
+	max-width: 1012px
+	width: 80%
+	margin: auto
+	display: flex
+	justify-content: space-between
+	input
+		width: 35%
+		max-width: 347px 
+		margin-right: 20px
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
+		border: none
+		height: 56px
+		background: #fff
+		padding: 0 33px
+		line-height: 16px
+		font-size: 16px
+		color: #516275
+	button
+		border: none
+		height: 56px
+		max-width: 270px
+		width: 28%
 
 
 // warranty screen
@@ -250,8 +263,8 @@ section.warranty
 	background: #FFFFFF
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
 	border-radius: 5px
-	padding: 46px 45px 50px 50px
-	margin: 0 10px
+	padding: 46px 40px 50px 45px
+	margin: 5px 10px
 
 	.slide_head
 		img
@@ -266,10 +279,86 @@ section.warranty
 				margin: 0 0 6px
 			span
 				display: block
+				font-size: 12px
 	.slide_text
 		margin-top: 28px
 		font-size: 14px
 		line-height: 18px
+.slick-dots
+	padding-left: 0
+	justify-content: center
+	list-style: none
+	display: flex
+	width: max-content
+	margin: 45px auto 0
+	li
+		height: 15px
+		& + li
+			margin-left: 23px
+		button
+			text-indent: -9999px
+			border: none
+			background: #C4C4C4
+			width: 15px
+			height: 15px
+			border-radius: 50%
+	li.slick-active
+		button
+			background: $h-text
+.slick-arrow
+	position: absolute
+	bottom: 0
+	cursor: pointer
+	color: #C4C4C4
+	&.fa-arrow-left
+		left: 0
+	&.fa-arrow-right
+		right: 0
+
+
+//article section
+
+section.article
+	p
+		font-weight: 300
+		line-height: 1.4
+		font-size: 16px
+		text-align: justify
+		color: #000
+		margin: 0 0 20px
+	h2
+	 margin-bottom: 38px
+	.about_us
+		margin-top: 45px
+		margin-bottom: 65px
+		h2
+			margin-bottom: 25px
+
+
+// warranty section
+.warr_icon
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
+	border-radius: 5px
+	max-width: 575px
+	height: 211px
+	display: flex
+	align-items: center
+	padding: 0 64px
+
+	.warr_icon--img
+		margin-right: 78px
+	.warr_icon--text
+		text-align: center
+		font-size: 22px
+		font-weight: bold
+
+.sert_row
+	margin-top: 18px
+	.sert_item
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15)
+		border-radius: 5px
+		padding: 20px 30px
+
 
 footer
 	min-height: 118px
