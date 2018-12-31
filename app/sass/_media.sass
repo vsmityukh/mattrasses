@@ -13,6 +13,9 @@
 			font-size: 16px
 			&.feedback
 				font-size: 12px
+
+	.products_wrapper.slick-initialized .slick-slide
+		display: flex
 // ≥768px
 +media-breakpoint-down(sm)
 	.logo_row
@@ -39,13 +42,59 @@
 			margin: auto
 		input
 			margin-bottom: 20px
+	.warr_row
+		&>div + div
+			margin-top: 30px
+		.warr_icon
+			height: 180px
+			.warr_icon--text
+				font-size: 18px
+	.sert_row
+		&>div + div
+			margin-top: 30px
+		.sert_item
+			img
+				margin: auto
+			
+
+	section.article img
+		margin: 0 auto 20px
+
 // ≥576px
 +media-breakpoint-down(xs)
+	section 
+		.title_row
+			font-size: 32px
 	.logo_row
 		a
 			font-size: 14px
 		a.mail
 			display: none
+
+	.steps_wrapper 
+		.steps_row 
+			.steps_row--header
+				span:first-child
+					font-size: 20px
+				span:last-child
+					font-size: 16px
+			.steps_row--info
+				p
+					font-size: 14px
+
+	.warr_row .warr_icon
+		height: 120px
+		.warr_icon--text
+			font-size: 14px
+		.warr_icon--img
+			img
+				width: 65px
+	section.contacts .contact_form 
+		padding: 30px
+		.title_row
+			font-size: 20px
+			small
+				font-size: 16px
 
 /*==========  Mobile First  ==========*/
 
